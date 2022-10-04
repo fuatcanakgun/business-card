@@ -1,0 +1,53 @@
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    animation-name: coloring;
+    animation-duration: 5s;
+}
+
+.avatar {
+    border: 5px solid #10451d;
+    border-radius: 30px;
+    width: 151px;
+    height: 129px;
+    box-shadow: 3px 3px;
+    object-fit: cover;
+    animation-name: smoother;
+    animation-duration: 3s;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #52b788;
+    color: #283618;
+    border-bottom: 16px double #bfd8bd;
+    border-radius: 30px;
+    animation-name: smoother;
+    animation-duration: 3s;
+}
+
+.card:hover{
+    background: #52b69a;
+    color: #184e77;
+    border-bottom: 16px double #184e77;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+@keyframes smoother {
+  from {border-radius: 0;}
+  to {border-radius: 30px;}
+}
+
+@keyframes coloring {
+  from {background: #52b788;}
+  to {background: white;}
+}
